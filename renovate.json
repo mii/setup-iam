@@ -13,6 +13,18 @@
     },
     "packageRules": [
         {
+            "matchPackageNames": [
+                "@types/node"
+            ],
+            "allowedVersions": "<21.0.0"
+        },
+        {
+            "matchPackageNames": [
+                "esbuild"
+            ],
+            "allowedVersions": "<0.22"
+        },
+        {
             "matchUpdateTypes": [
                 "minor",
                 "patch",
