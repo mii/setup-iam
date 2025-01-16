@@ -51,7 +51,7 @@
                 "digest"
             ],
             "matchPackagePatterns": [
-                "eslint"
+                "/eslint/"
             ],
             "groupName": "eslint",
             "autoApprove": true,
