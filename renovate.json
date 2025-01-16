@@ -8,12 +8,10 @@
         ":automergePatch"
     ],
     "schedule": [
-        "after 9am on monday",
-        "before 12am on monday"
+        "after 10pm and before 5am every weekday"
     ],
     "automergeSchedule": [
-        "after 9am on monday",
-        "before 12am on monday"
+        "after 10pm and before 5am every weekday"
     ],
     "major": {
         "enabled": false
