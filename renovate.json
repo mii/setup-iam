@@ -1,12 +1,19 @@
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:js-app"
+        "config:recommended",
+        ":timezone(Asia/Tokyo)",
+        ":prHourlyLimitNone",
+        ":automergeMinor",
+        ":automergePatch"
     ],
     "schedule": [
-        "every 4 hour after 00:00 and before 23:59 every day"
+        "after 9am on monday",
+        "before 12am on monday"
     ],
     "automergeSchedule": [
-        "every 4 hour after 00:00 and before 23:59 every day"
+        "after 9am on monday",
+        "before 12am on monday"
     ],
     "major": {
         "enabled": false
@@ -16,13 +23,17 @@
             "matchPackageNames": [
                 "@types/node"
             ],
-            "allowedVersions": "<21.0.0"
+            "allowedVersions": "<21.0.0",
+            "autoApprove": true,
+            "automerge": true
         },
         {
             "matchPackageNames": [
                 "esbuild"
             ],
-            "allowedVersions": "<0.22"
+            "allowedVersions": "<0.22",
+            "autoApprove": true,
+            "automerge": true
         },
         {
             "matchUpdateTypes": [
@@ -31,6 +42,7 @@
                 "pin",
                 "digest"
             ],
+            "autoApprove": true,
             "automerge": true
         },
         {
@@ -44,6 +56,7 @@
                 "eslint"
             ],
             "groupName": "eslint",
+            "autoApprove": true,
             "automerge": true
         }
     ]
