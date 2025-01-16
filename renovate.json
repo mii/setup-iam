@@ -22,16 +22,14 @@
                 "@types/node"
             ],
             "allowedVersions": "<21.0.0",
-            "autoApprove": true,
-            "automerge": true
+            "autoApprove": true
         },
         {
             "matchPackageNames": [
                 "esbuild"
             ],
             "allowedVersions": "<0.22",
-            "autoApprove": true,
-            "automerge": true
+            "autoApprove": true
         },
         {
             "matchUpdateTypes": [
@@ -40,8 +38,7 @@
                 "pin",
                 "digest"
             ],
-            "autoApprove": true,
-            "automerge": true
+            "autoApprove": true
         },
         {
             "matchUpdateTypes": [
@@ -54,8 +51,7 @@
                 "/eslint/"
             ],
             "groupName": "eslint",
-            "autoApprove": true,
-            "automerge": true
+            "autoApprove": true
         }
     ]
 }
